@@ -36,3 +36,25 @@ h3 {
 .item-double {
   flex: 2;
 }
+
+/* This applies from 0px to 600px */
+@media all and (max-width: 600px) {
+  .group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+}
+
+/* Groups and items (Desktop) */
+
+@media all and (min-width: 800px) {
+  section,
+  h1 {
+    padding: 0 10%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
